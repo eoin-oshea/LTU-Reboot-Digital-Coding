@@ -8,7 +8,7 @@ Introduction to Web Development
 
 What have I learnt?
 
-I learnt about the different positions in web development, like what a front end developer is and does....
+I learnt more about how Github works, and learned how web developers seem to prefer browsers that are resource heavy, and that some browsers have problems loading different pages. I learned of many new learning resources
 
 How did I use this in practice?
 
