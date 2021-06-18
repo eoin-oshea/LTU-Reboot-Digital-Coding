@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 1px solid goldenrod;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    border-bottom: 1px solid #e8eaed;
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+
+}
