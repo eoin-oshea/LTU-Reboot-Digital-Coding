@@ -79,7 +79,7 @@ totalPrice(price, quantity)*/
 //let greeting = name => console.log( name );
 //end ES6 arrow function
 
-let checkAvailability = productInStock => console.log(productInStock)
+/*let checkAvailability = productInStock => console.log(productInStock)
 
 checkAvailability(inStock)
 
@@ -88,14 +88,119 @@ function scope() {
     console.log(productName)
 }
 
-scope();
+scope();*/
 
 
-//Practicing IF statements
+/*//Practicing IF statements
 let num=50
 
 if (num!=50) {
     console.log('If is true');
 } else {
     console.log('If is false');
+}
+
+function productDiscount(){
+    if(quantity > 1) {
+        let newPrice = (price * quantity) - discountAmount;
+        console.log(newPrice);
+    } else {
+        console.log(price * quantity);
+    }
+}*/
+
+//productDiscount();
+
+//comparing IF and Switch Statements
+
+//let colour = 'orange';
+
+/*if(colour === 'grey') {
+    console.log('Correct');
+} else if(colour === 'orange') {
+    console.log('correct');
+} else {
+    console.log('incorrect');
+}*/
+
+//switch statement
+/*switch(colour){
+    case 'orange':
+        console.log('Correct');
+        break;
+    case 'grey' :
+        console.log('Correct');
+        break;
+    default:
+        console.log('Incorrect');
+        break;
+}*/
+
+/*function drinkOrder(drink, size) {
+    switch(drink){
+        case 'cola':
+            console.log(drink, size);
+            break;
+        case 'lemonade':
+            console.log(drink, size);
+            break;
+        case 'orangeade':
+            console.log(drink, size);
+            break;
+        default:
+            //console.log("We don't currently have a " + size + " " + drink + " apologies");
+            console.log(`We don't currently have a ${size} ${drink}, apologies`);
+            break;
+    }
+}
+
+drinkOrder('cola', 'X-large');
+drinkOrder('lemonade', 'Medium');
+drinkOrder('orangeade', 'Small');*/
+
+//ES6 standard 
+
+/*function calculator(num1, num2, operator){
+    switch(operator){
+        case '+':
+            console.log(`${num1} + ${num2} = ${num1 + num2}`);
+            break;
+        case '-':
+            console.log(`${num1} - ${num2} = ${num1 - num2}`);
+            break;
+        case '/':
+            console.log(`${num1} / ${num2} = ${num1 / num2}`);
+            break;
+        case '*':
+            console.log(`${num1} * ${num2} = ${num1 * num2}`);
+            break;
+        default:
+            console.log(`${operator} does not exist`);
+            break;
+    }
+}
+
+calculator(1, 1, '+');
+calculator(10, 2, '-');
+calculator(30, 5, '/');
+calculator(5, 6, '*');*/
+
+/*let firstName = 'Eoin';
+let lastName = "O'Shea";
+
+let fullName = firstName + " " + lastName;
+
+console.log(fullName)*/
+
+//Advanced IF operators
+let temperature = 30;
+let season = 'Summer';
+
+if(temperature < 30 || season === 'Spring') {
+    //&& is the same as AND, || is the same as OR
+    console.log('You should wear just a t-shirt and shorts');
+} else if(season !== 'Spring'){
+    console.log("It's not Spring");
+} else {
+    console.log('You should wear trousers and a jumper');
 }
