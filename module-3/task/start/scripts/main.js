@@ -193,7 +193,7 @@ let fullName = firstName + " " + lastName;
 console.log(fullName)*/
 
 //Advanced IF operators
-let temperature = 30;
+/*let temperature = 30;
 let season = 'Summer';
 
 if(temperature < 30 || season === 'Spring') {
@@ -203,4 +203,67 @@ if(temperature < 30 || season === 'Spring') {
     console.log("It's not Spring");
 } else {
     console.log('You should wear trousers and a jumper');
+}*/
+
+/*let product = [
+    productName,
+    price,
+    quantity,
+    inStock,
+    discountAmount
+];
+
+console.log(product);
+
+let firstItem = product[0];
+let secondItem = product[1];
+let lastItem = product[4];*/
+
+let product = {
+    productName: 'Apples',
+    price: 1.29,
+    quantity: 6,
+    inStock: true,
+    discountAmount: 0.35,
+    coloursAvailable: ['Green','Red','Yellow','Pink'],
+};
+
+//let yellow = product['coloursAvailable'][2]; //assign a property in an array to a variable
+
+//delete product.price; //how to delete a property from an array
+
+product.price = 2.09; //changing properties in an array
+
+product.shape = 'sphere';
+
+product.shape = ['sphere','cube']; //changing a property to a different type
+
+console.log(product);
+
+let hotel = {
+    name:'Quay',
+    rooms:40,
+    booked:25,
+    gym:true,
+    roomTypes: ['twin','double','suite'],
+
+    checkAvailability:function() {
+        return this.rooms-this.booked;
+    }
+}
+
+console.log(hotel['checkAvailability']());
+
+/*let nameOfProduct = product.productName;
+let discount = product['discountAmount'];*/
+
+//Loops
+/*for (let i=0;i<10;i++){
+    console.log(i);
+}*/
+
+let numbers = [1,2,3,4,5];
+
+for (let counter=0; counter <= 4; counter++) {
+    console.log(numbers[counter]);
 }
