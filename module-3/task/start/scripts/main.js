@@ -1,9 +1,9 @@
-const productName = 'Baked Beans'; //Creates an unchanging piece of data, with type String
+/*const productName = 'Baked Beans'; //Creates an unchanging piece of data, with type String
 let price = 1.50; //Creates a variable, with type Number
 let quantity = 3;
 
 let inStock = true; //Creates a variable, with type Boolean
-let discountAmount = 0.20;
+let discountAmount = 0.20;*/
 
 //console.log(productName); //Calls up data, regardless of type
 //console.log(price);
@@ -219,20 +219,20 @@ let firstItem = product[0];
 let secondItem = product[1];
 let lastItem = product[4];*/
 
-let product = {
+/*let product = {
     productName: 'Apples',
     price: 1.29,
     quantity: 6,
     inStock: true,
     discountAmount: 0.35,
     coloursAvailable: ['Green','Red','Yellow','Pink'],
-};
+};*/
 
 //let yellow = product['coloursAvailable'][2]; //assign a property in an array to a variable
 
 //delete product.price; //how to delete a property from an array
 
-product.price = 2.09; //changing properties in an array
+/*product.price = 2.09; //changing properties in an array
 
 product.shape = 'sphere';
 
@@ -250,7 +250,7 @@ let hotel = {
     checkAvailability:function() {
         return this.rooms-this.booked;
     }
-}
+}*/
 
 //console.log(hotel['checkAvailability']());
 
@@ -270,7 +270,7 @@ for (let counter=0; counter <= 4; counter++) {
 
 //code to call up data from shoppingBasket.js
 //console.log(shoppingBasket[0].type);
-function totalPriceOfShopping( arr ) {
+/*function totalPriceOfShopping( arr ) {
     let totalPrice = 0;
     for(let counter = 0; counter < arr.length; counter++ ) {
 
@@ -290,11 +290,11 @@ function totalPriceOfShopping( arr ) {
     return totalPrice.toFixed(2);
 
     //console.log( arr[3].type ); //calls up the type of the 4th product on the array
-}
+}*/
 
 //console.log( `Total Price: £ ${totalPriceOfShopping( shoppingBasket )}` );
 
-function discountToiletries( arr ){
+/*function discountToiletries( arr ){
     let totalPrice = 0;
 
     for(let counter = 0; counter < arr.length; counter++ ) {
@@ -310,13 +310,13 @@ function discountToiletries( arr ){
 
     return totalPrice.toFixed(2);
 
-}
+}*/
 
 //console.log( `Total Price: £ ${discountToiletries(shoppingBasket)}` );
 //console.log(shoppingBasket.length);
 
 //function with more customisable components
-function discount( arr, discountNum, type ) {
+/*function discount( arr, discountNum, type ) {
     let totalPrice = 0;
 
     for(let counter = 0; counter < arr.length; counter++ ) {
@@ -332,7 +332,7 @@ function discount( arr, discountNum, type ) {
 
     return totalPrice.toFixed(2);
 
-}
+}*/
 
 //console.log( discount( shoppingBasket, 1.20, "dairy") );
 
@@ -360,7 +360,7 @@ How am I going to cycle over the information (shopping basket)?
 */
 
 
-function howMany( arr, type ) {
+/*function howMany( arr, type ) {
 
     let totalAmount = 0;
 
@@ -375,3 +375,76 @@ function howMany( arr, type ) {
 }
 
 console.log(howMany( shoppingBasket, 'dairy')); //total should be 9
+*/
+
+/*
+7 times table
+
+FOR LOOP
+    START
+    CONDITION
+    INCREMENT/STEP
+    START = 1
+    START <= 12
+
+*/
+
+function multiplyBy( min, max, num ){
+    for( let counter = min; counter <= max; counter++ ){
+        let result = counter * num;
+        let message = `${counter} * ${num} = ${result}`;
+        console.log( message );
+    }
+}
+
+// multiplyBy(1, 12, 7);
+
+
+let books = [
+    {
+        title : 'The Laws of Robotics',
+        author : 'Isaac Asimov',
+        hasRead : true,
+    },
+    {
+        title : 'I, Robot',
+        author : 'Isaac Asimov',
+        hasRead : false,
+    },
+    {
+        title : 'Dragonball',
+        author : 'Akira Toriyama',
+        hasRead : true,
+    }
+];
+
+/*for(let index = 0; index < books.length; index++ ) {
+
+    console.log(books[index].title);
+    console.log(books[index].hasRead);
+    console.log(books[index]["hasRead"]);
+
+    if( books[index].hasRead ) {
+        console.log(`You have read ${books[index].title}`);
+    } else {
+        console.log(`You have not read ${books[index].title}`);
+}
+
+}*/
+
+for( let index = 0; index < books.length; index++ ) {
+    
+    let haveRead = books[index].hasRead;
+
+    switch( haveRead ) {
+        case true :
+            console.log(`You have read ${books[index].title} by ${books[index].author}`);
+            break;
+        default :
+            console.log(`You have not read ${books[index].title} by ${books[index].author}`);
+            break;
+    }
+
+}
+
+//books.forEach( book => console.log( book ));
