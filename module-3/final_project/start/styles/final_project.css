@@ -62,7 +62,7 @@ button {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   border: none;
-  border-radius: 2px;
+  border-radius: 25px;
   display: inline-block;
   font-size: 14px;
   font-weight: 500;
@@ -87,6 +87,6 @@ footer {
 /* active */
 
 .active {
-  background-color: orange;
+  background-color: goldenrod;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
